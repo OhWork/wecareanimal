@@ -1,0 +1,129 @@
+body {
+	background-color:#CFD8DC;
+}
+@media (min-width: 375px) {
+.container {
+	max-width: 350px;
+}
+}
+/*.........................................................................*/
+@media (min-width: 576px){
+.container {
+	max-width: 540px;
+}
+]
+/*.........................................................................*/
+@media (min-width: 768px){
+.container {
+	max-width: 720px;
+}
+}
+/*.........................................................................*/
+@media (min-width: 992px) {
+.container {
+	max-width: 960px;
+}
+}
+/*.........................................................................*/
+@media (min-width: 1200px) {
+.container {
+	max-width: 1140px;
+}
+}
+/*.........................................................................*/
+@media (min-width: 1600px){
+.container {
+    max-width: 1570px;
+}
+}
+.menumain {
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left: 35px;
+	background-color: #737d84;
+    border-color: #868e96;
+}
+.sidemenu {
+	border-top : solid 1px #868e96;
+	border-left : solid 1px #868e96;
+	border-bottom : solid 1px #868e96;
+	border-top-left-radius : 7px;
+	border-bottom-left-radius : 7px;
+	padding-top:15px;
+	padding-bottom:525px;
+	margin-top:50px;
+}
+.menupad {
+	padding-top:40px;
+	padding-bottom:40px;
+	margin-left:5px;
+	margin-right:5px;
+	max-width:15.5%;
+}
+.member {
+	color:#ffffff;
+	margin-top: 15px;
+}
+.membertext {
+	color:#ffffff;
+	margin-bottom:0px;
+	margin-top:7px;
+	text-align:right;
+}
+.history {
+	background-color:#ffffff;
+	border-radius: 8px;
+	height : 550px;
+}
+.history2 {
+	background-color:#ffffff;
+	border-radius: 8px;
+	height : 490px;
+}
+.loginbg {
+	border : solid 1px #00008b;
+	border-radius: 8px;
+	padding-bottom:15px;
+	background-color: #8C9EFF;
+	-webkit-box-shadow: 1px 1px 3px 3px #00008b;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 1px 3px 3px #00008b;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 1px 3px 3px #00008b;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.glow {
+  color: #8C9EFF;
+  text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #868e96;
+  border-color: #868e96;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #727b84;
+  border-color: #6c757d;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  background-color: #BDBDBD;
+  color:#000000;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  background-color: #868e96;
+  border-color: #868e96;
+}
+
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #080808;
+  border-color: #666e76;
+  box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+}
