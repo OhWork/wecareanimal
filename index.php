@@ -8,7 +8,9 @@
 		<link rel="stylesheet" href="CSS/scss/_input-group.scss">
 	</head>
 	<body>
-    	<?php 
-        	include 'menumain.php';
-    	?>
+		<div class="warpper">
+			<div class="container">
+				<?php include 'menumain.php'; ?>
+			</div>
+		</div>
 	</body>
