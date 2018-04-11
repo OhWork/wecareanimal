@@ -10,5 +10,6 @@
 	<body>
     	<?php 
         	include 'menumain.php';
+        	include 'content.php';
     	?>
 	</body>
