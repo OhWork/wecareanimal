@@ -11,6 +11,7 @@
 		<div class="warpper">
 			<div class="container">
 				<?php include 'menumain.php'; ?>
+				<?php include 'content.php'; ?>
 			</div>
 		</div>
 	</body>
