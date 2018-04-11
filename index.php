@@ -6,6 +6,14 @@
         <link rel="stylesheet" href="CSS/jquery-ui.css">
         <link rel="stylesheet" href="CSS/main.css">
 		<link rel="stylesheet" href="CSS/scss/_input-group.scss">
+		<title></title>
+		<?php
+            include_once 'inc_js.php';
+            include_once 'database/db_tools.php';
+            include_once 'connect.php';
+            include_once 'form/main_form.php';
+            include_once 'form/gridview.php';
+        ?>
 	</head>
 	<body>
 		<div class="warpper">
