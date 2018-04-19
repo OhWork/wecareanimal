@@ -120,3 +120,6 @@ body {
   border-color: #666e76;
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
+.textfieldadd {
+	width:100%;
+}
