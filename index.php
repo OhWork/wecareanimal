@@ -21,6 +21,7 @@
 				<div class="row">
 					<?php include 'menumain.php'; ?>
 					<?php include 'content.php'; ?>
+					<?php include 'history.php'; ?>
 				</div>
 			</div>
 		</div>
