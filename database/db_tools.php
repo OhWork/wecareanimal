@@ -4,7 +4,7 @@
 		var $host = 'localhost';
 		var $user = 'root';
 		var $pass = '';//เปลี่ยน
-		var $db_name = 'intranet';
+		var $db_name = 'wecareanimal';
 		var $sql;
 		//คำสั่งเพื่อเชื่อมต่อฐานข้อมูลโดยเลือกเทเบิ้ล
 		function connect(){
@@ -128,6 +128,14 @@
 		}
 		function conditions($table,$condition){
 			$this->sql = "SELECT * FROM $table WHERE $condition";
+			return $this;
+		}
+		function conditions2($select,$table,$order){
+			$this->sql = "SELECT $select FROM $table ORDER BY $order";
+			return $this;
+		}
+		function conditions3($select,$table,$condition,$order){
+			$this->sql = "SELECT $select FROM $table WHERE $condition ORDER BY $order";
 			return $this;
 		}
 
