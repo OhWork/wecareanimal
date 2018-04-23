@@ -10,7 +10,8 @@
     $lbline = new label('LineID');
     $txtname = new textfield('-','','form-control','','');
     $txtlastname = new textfield('-','','form-control','','');
-    $txtaddress = new textArea('','','','','');$button = new buttonok("ยืนยัน","","btn btn-success col-md-12","");
+    $txtaddress = new textArea('','txtarea','','','');
+	$button = new buttonok("ยืนยัน","","btn btn-success col-md-12","");
 	echo $form->open("","","","insert_customer.php","");
 ?>
 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top:10px;">
