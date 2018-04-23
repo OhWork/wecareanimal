@@ -35,11 +35,17 @@
 				</div>
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top:5px;">
 					<div class="row">
-						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="padding-top:6px;"><?php echo $lbsubdistrict; ?></div>
-						<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9"><select class="form-control col-12" id="selSubdistrict">
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="padding-top:6px;"><?php echo $lbprovince; ?></div>
+						<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9"><select class="form-control col-12" id="selProvince">
 																				<option value=""> ------- เลือก ------ </option>
-																				</select><span id="waitSubdistrict">
-																				</span>
+																				<?php
+																					$rs = $db->conditions2("PROVINCE_ID,PROVINCE_NAME","province","CONVERT(province_NAME USING TIS620) ASC")->execute();
+																					//$rs = $db->conditions3("district_ID,district_NAME","district","PROVINCE_ID = '1'","CONVERT(province_NAME USING TIS620) ASC")->execute();
+																					while($row = mysqli_fetch_assoc($rs)){
+																						echo '<option value="', $row['PROVINCE_ID'], '">', $row['PROVINCE_NAME'],'</option>';
+																					}
+																				?>
+																				</select>
 						</div>
 					</div>
 				</div>
@@ -55,17 +61,11 @@
 				</div>
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top:5px;">
 					<div class="row">
-						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="padding-top:6px;"><?php echo $lbprovince; ?></div>
-						<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9"><select class="form-control col-12" id="selProvince">
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="padding-top:6px;"><?php echo $lbsubdistrict; ?></div>
+						<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9"><select class="form-control col-12" id="selSubdistrict">
 																				<option value=""> ------- เลือก ------ </option>
-																				<?php
-																					$rs = $db->conditions2("PROVINCE_ID,PROVINCE_NAME","province","CONVERT(province_NAME USING TIS620) ASC")->execute();
-																					//$rs = $db->conditions3("district_ID,district_NAME","district","PROVINCE_ID = '1'","CONVERT(province_NAME USING TIS620) ASC")->execute();
-																					while($row = mysqli_fetch_assoc($rs)){
-																						echo '<option value="', $row['PROVINCE_ID'], '">', $row['PROVINCE_NAME'],'</option>';
-																					}
-																				?>
-																				</select>
+																				</select><span id="waitSubdistrict">
+																				</span>
 						</div>
 					</div>
 				</div>
