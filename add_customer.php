@@ -14,7 +14,6 @@
     $txtline = new textfield('-','','form-control','','');
     $txtaddress = new textArea('','txtarea','','','');
 	$button = new buttonok("ยืนยัน","","btn btn-success col-md-12","");
-	echo $form->open("","","","insert_customer.php","");
 ?>
 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top:10px;">
 	<div class="row">
@@ -25,8 +24,8 @@
 						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"></div>
 						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
 							<div class="row">
-								<button class="btn btn-light col-12" style="margin-top:15px;"><img src="images/user.png" /></button>
-								<button class="btn btn-light col-12" style="margin-top:5px;"><img src="images/pet.png" width="64" height="64" /></button>
+								<button class="btn btn-light col-12 menuleft" style="margin-top:15px;"><a href ="index.php?url=add_customer.php"><img src="images/user.png" /></a></button>
+								<button class="btn btn-light col-12 menuleft2" style="margin-top:5px;"><a href ="#"><img src="images/pet.png" width="64" height="64" /></a></button>
 							</div>
 						</div>
 						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"></div>
@@ -35,6 +34,9 @@
 			</div>
 		</div>
 		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+				<?php
+	echo $form->open("","","","insert_customer.php","");
+	?>
 			<div class="row">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 					<h1>ลงทะเบียน</h1>
@@ -117,3 +119,16 @@
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"><div>
 	</div>
 </div>
+<script>
+	$(document).ready(function(){
+		$('.menuleft').addClass('disabled');
+		$('.menuleft').on("click",function(e) {
+		$('.menuleft').addClass('disabled');
+		});
+		$('.menuleft2').on("click",function(e) {
+		$('.menuleft2').addClass('disabled');
+		$('.menuleft').removeClass('disabled');
+		console.log(1);
+		});
+	});
+</script>
